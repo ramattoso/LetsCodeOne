@@ -1,4 +1,4 @@
-// Questão 5 - De uma lista de dez números desordenados, encontre e mostre o maior.
+// QuestÃ£o 5 - De uma lista de dez nÃºmeros desordenados, encontre e mostre o maior.
 programa {
   funcao inicio() {
     
@@ -6,7 +6,7 @@ programa {
     
     para(inteiro k=0; k<10; k++)
     {
-        escreva("\n Digite um número \n")
+        escreva("\n Digite um nÃºmero \n")
         leia(num[k])
     }
     maior = num[0]
