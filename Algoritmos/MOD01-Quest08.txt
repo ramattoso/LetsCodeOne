@@ -1,0 +1,28 @@
+//Questão 8 - Ordene uma lista de 10 palavras recebidas pela pessoa, as palavras serão digitadas uma por vez.
+programa{
+  funcao inicio() {
+
+    cadeia listaDePalavras[10], listaOrdenada[10], aux[10], palavra;
+
+    escreva("\n Digite uma palavra \n")
+        leia(listaDePalavras[0])
+    listaOrdenada[0] = listaDePalavras[0]
+    para(inteiro i = 1; i < 10; i++){
+        escreva("\n Digite uma palavra \n")
+        leia(palavra)
+        POSICIONA(palavra)
+    }
+    escreva(listaOrdenada)
+}
+funcao POSICIONA(palavra,listaOrdenada)
+  inteiro i=0;
+  while(i!=EndOfList)
+    SE(palavra<listaOrdenada(i))
+      aux[] = listaOrdenada[];
+      listaOrdenada[i] = palavra;
+      while (i!=EndOfList)
+      listaOrdenada[i+1] = aux[i];
+      i = i+1;
+    SENAO
+      i=i+1;
+}
