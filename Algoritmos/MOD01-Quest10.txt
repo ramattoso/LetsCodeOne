@@ -1,0 +1,29 @@
+//Quest�o 10. Ordene uma lista de n�meros com tamanho indefinido.
+
+programa {
+  funcao inicio() {
+
+    inteiro cont, num, lista[], listaOrdenada[];
+    cadeia s
+
+    ans = 's'
+    while(ans=='s')
+        escreva("\n Deseja adicionar números a lista? \n")
+        leia(ans)
+        escreva("Entre com um número \n")
+        leia(num)
+        cont = cont+1;
+        lista[cont] = num;
+        aux=listaOrdenada;
+        !ISEMPTY(listaOrdenada)
+          para (inteiro i=0; i=<cont; i++)
+          {
+            SE(num<listaOrdenada[i])
+              listaOrdenada[i] = num
+              while(i<cont)
+                listaOrdenada[i+1] = aux[i]
+                SENAO
+                i = i+1;
+          }
+  }
+}
